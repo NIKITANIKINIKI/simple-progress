@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Block</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <label class="body__label">Progress</label>
+     <div class="box">
+       <div class="progress-container">
+         <div class="progress-container__full"></div>
+         <div class="progress-container__color"></div>
+       </div>
+      
+     </div>
+     <div class="box">
+
+       <div class="state-container">
+         <div class="state-container__control">
+           <input
+             id="value"
+             class="controls__number"
+             value="10"
+             type="number"
+             min="0"
+             max="100"
+             step="1"
+           />
+           <label for="value" class="controls__label">Value</label>
+         </div>
+         <div class="state-container__control">
+           <input type="checkbox" id="animated" class="controls__input" />
+           <label for="animated" class="controls__label">Animated</label>
+         </div>
+         <div class="state-container__control">
+           <input type="checkbox" id="hide" class="controls__input" />
+           <label for="hide" class="controls__label">Hide</label>
+         </div>
+       </div>
+     </div>
+  </body>
+</html>
